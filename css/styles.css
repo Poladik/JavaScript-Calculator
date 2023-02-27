@@ -1,20 +1,21 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: tan;
 }
 
 .box {
+  margin-top: 10%;
   background-color: #3d4543;
   height: 300px;
-  width: 250px;
+  width: 550px;
   border-radius: 10px;
-  position: relative;
-  top: 80px;
-  left: 40%;
 }
 
 .display {
-  background-color: #222;
-  width: 225px;
+  /* background-color: #222; */
+  width: 500px;
   position: relative;
   left: 15px;
   top: 20px;
@@ -22,7 +23,7 @@ body {
 }
 
 .display input {
-  width: 220px;
+  width: 400px;
   position: relative;
   left: 2px;
   top: 2px;
