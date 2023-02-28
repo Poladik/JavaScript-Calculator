@@ -3,45 +3,50 @@
 
 <head>
   <meta charset='UTF-8'>
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="box">
-    <div class="display">
-      <input class="disp" type="text" readonly size="50">
+  <header class="main-header">
+    <div class="container">
+      <h1 class="main-header__title">JavaScript calculator by Polad Mamedov</h1>
     </div>
-    <div class="keys">
-      <p>
-        <input type="button" class="button gray" value="mrc">
-        <input type="button" class="button gray" value="m-">
-        <input type="button" class="button gray" value="m+">
-        <input type="button" class="button pink" value="/">
-      </p>
-      <p>
-        <input type="button" class="button black" value="7">
-        <input type="button" class="button black" value="8">
-        <input type="button" class="button black" value="9">
-        <input type="button" class="button pink" value="*">
-      </p>
-      <p>
-        <input type="button" class="button black" value="4">
-        <input type="button" class="button black" value="5">
-        <input type="button" class="button black" value="6">
-        <input type="button" class="button pink" value="-">
-      </p>
-      <p>
-        <input type="button" class="button black" value="1">
-        <input type="button" class="button black" value="2">
-        <input type="button" class="button black" value="3">
-        <input type="button" class="button pink" value="+">
-      </p>
-      <p>
-        <input type="button" class="button black" value="0">
-        <input type="button" class="button black" value=".">
-        <input type="button" class="button black" value="C">
-        <input type="button" class="button orange" value="=">
-      </p>
+  </header>
+  <div class="container">
+    <div class="calculator">
+      <div class="calculator__top">
+        <h2 class="calculator__title">JavaScript</h2>
+        <div class="calculator__solar-panel"></div>
+      </div>
+      <div class="display">
+        <h3 class="display__m">m</h3>
+        <input class="display__lcd" type="text" readonly size="50">
+      </div>
+      <div class="keys">
+          <input type="button" class="button gray" value="mrc">
+          <input type="button" class="button gray" value="m-">
+          <input type="button" class="button gray" value="m+">
+          <input type="button" class="button pink" value="/">
+          <input type="button" class="button black" value="7">
+          <input type="button" class="button black" value="8">
+          <input type="button" class="button black" value="9">
+          <input type="button" class="button pink" value="*">
+          <input type="button" class="button black" value="4">
+          <input type="button" class="button black" value="5">
+          <input type="button" class="button black" value="6">
+          <input type="button" class="button pink" value="-">
+          <input type="button" class="button black" value="1">
+          <input type="button" class="button black" value="2">
+          <input type="button" class="button black" value="3">
+          <input type="button" class="button pink" value="+">
+          <input type="button" class="button black" value="0">
+          <input type="button" class="button black" value=".">
+          <input type="button" class="button black" value="C">
+          <input type="button" class="button orange" value="=">
+      </div>
     </div>
   </div>
   <script src="./js/script.js"></script>

@@ -1,6 +1,6 @@
 "use strict";
 const calcBtns = document.querySelector(".keys");
-const display = document.querySelector(".disp");
+const display = document.querySelector(".display__lcd");
 const operators = ["*", "/", "+", "-"];
 let displayValue = "";
 let operator;
@@ -48,8 +48,10 @@ calcBtns.addEventListener("click", (e) => {
     return;
   }
 
-  // making sure that you can't type two commas in one number or in wrong place
+  // making sure that you can't type two commas in one number or in wrong place, and more than one zero at the start or in wrong place
   if (
+    (value === "0" && displayValue === "0") ||
+    (value === "0" && secondNum === "0") ||
     (value === "." && displayValue === "") ||
     (operators.includes(lastDigitOnDisplay) && value === ".") ||
     (lastDigitOnDisplay === "." && operators.includes(value)) ||
